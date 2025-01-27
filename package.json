@@ -1,36 +1,39 @@
 {
-  "homepage" : "https://konradsosna.github.io/solko",
-  "name": "solko",
-  "private": false,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-multi-carousel": "^2.8.5",
-    "react-router-dom": "^7.1.1",
-    "react-youtube": "^10.1.0",
-    "styled-components": "^6.1.14"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.18.0",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
-    "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.18.0",
-    "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.16",
-    "globals": "^15.14.0",
-    "prettier": "3.1.0",
-    "typescript": "~5.6.2",
-    "typescript-eslint": "^8.20.0",
-    "vite": "^6.0.5"
-  }
+	"homepage": "https://konradsosna.github.io/solko",
+	"name": "solko",
+	"private": false,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite dist",
+		"lint": "eslint .",
+		"preview": "vite preview",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
+	},
+	"dependencies": {
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-multi-carousel": "^2.8.5",
+		"react-router-dom": "^7.1.1",
+		"react-youtube": "^10.1.0",
+		"styled-components": "^6.1.14"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.18.0",
+		"@types/react": "^18.3.18",
+		"@types/react-dom": "^18.3.5",
+		"@vitejs/plugin-react": "^4.3.4",
+		"eslint": "^9.18.0",
+		"eslint-plugin-react": "^7.37.4",
+		"eslint-plugin-react-hooks": "^5.0.0",
+		"eslint-plugin-react-refresh": "^0.4.16",
+		"gh-pages": "^6.3.0",
+		"globals": "^15.14.0",
+		"prettier": "3.1.0",
+		"typescript": "~5.6.2",
+		"typescript-eslint": "^8.20.0",
+		"vite": "^6.0.5"
+	}
 }
